@@ -1,0 +1,85 @@
+/*header logo and Nav*/
+header {
+  display: flex;
+  width: 80%;
+  height: 20vh;
+  margin: auto;
+  align-items: center;
+}
+
+.logo-container, .nav-links {
+  display: flex;
+}
+
+.logo-container {
+  flex: 1;
+  border-right: 3px solid #262626;
+}
+
+.logo-container img {
+  height: auto;
+  width: 150px;
+}
+
+nav {
+  flex: 2;
+}
+
+.nav-links {
+  justify-content: space-around;
+  list-style: none;
+  text-shadow: 3px 3px 3px darkred;
+}
+
+#li1 {
+  color: rgb(170, 0, 0);
+  text-shadow: none;
+  pointer-events: none;
+}
+
+.navLink {
+  color: #262626;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+h2 {
+ font-family: 'Times New Roman', Times, serif;
+ font-size: 50px;
+ display: flex;
+ justify-content: center;
+ text-shadow: 3px 3px 3px  darkred;
+}
+body{
+  height: 100vh;
+
+}
+
+
+
+.img-wrap{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}.img-wrap img{
+  widows: 400px;
+  height: 400px;
+  padding: 10px; 
+  border-radius: 50%;
+  box-shadow: 0 0 10px gray;
+  
+}
+footer {
+  display: flex;
+  justify-content: center;
+  background: #d4d4d4;
+  width: auto;
+  height: 10vh;
+  margin: auto;
+}
+
+footer p {
+  flex: 1;
+  align-self: center;
+  padding: 10px;
+}
