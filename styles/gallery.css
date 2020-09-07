@@ -1,0 +1,156 @@
+/*header logo and Nav*/
+header {
+  display: flex;
+  width: 80%;
+  height: 20vh;
+  margin: auto;
+  align-items: center;
+}
+
+.logo-container, .nav-links {
+  display: flex;
+}
+
+.logo-container {
+  flex: 1;
+  border-right: 3px solid #262626;
+}
+
+.logo-container img {
+  height: auto;
+  width: 150px;
+}
+
+nav {
+  flex: 2;
+}
+
+.nav-links {
+  justify-content: space-around;
+  list-style: none;
+  text-shadow: 3px 3px 3px darkred;
+}
+
+#li1 {
+  color: rgb(170, 0, 0);
+  text-shadow: none;
+  pointer-events: none;
+}
+
+.navLink {
+  color: #262626;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+h2 {
+ font-family: 'Times New Roman', Times, serif;
+ font-size: 50px;
+ display: flex;
+ justify-content: center;
+ text-shadow: 3px 3px 3px  darkred;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  background: #d4d4d4;
+  width: auto;
+  height: 10vh;
+  margin: auto;
+}
+
+
+/* Master styles */
+body {
+  margin: 0px;
+  width: 1500px;
+  }
+  
+  .container{
+    display: grid;
+    grid-template-columns: 1fr ;
+  }
+   /* Portfolio Styles */
+   .portfolio-items-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .portfolio-item-wrapper{
+    position: relative;
+  }
+  .portfolio-img-background{
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .img-text-wrapper{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .logo-wrapper img {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  /*Needs to be more specific with selector*/
+  .img-text-wrapper .subtitle {
+  transition:1s;
+  color: transparent;
+  font-weight: 600;
+  font-size: 18px;
+  }
+  .img-text-wrapper:hover .subtitle {
+    font-weight: 600;
+    font-size: 18px;
+    color:whitesmoke;
+  }
+  .img-darken{
+    transition: 1s;
+    filter: brightness(10%);
+  }
+  .img-text-wrapper .subtitle1 {
+    color: black;
+    transition:1s;
+    color: transparent;
+    font-weight: 600;
+    font-size: 18px;
+  }
+.img-text-wrapper:hover .subtitle1{
+  font-size: 600px;
+  font-size:18px;
+  color: darkred;
+}
+/*button*/
+.ScheduleButton {
+  
+  height: 50px;
+  box-shadow: inset 0px 1px 0px 0px #cf866c;
+	background: linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+	background-color: #d0451b;
+	border-radius: 3px;
+	border: 1px solid #942911;
+	display:inline-block;
+	cursor:pointer;
+	color: #ffffff;
+	font-size: 25px;
+	margin: 10px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #854629;
+}
+.ScheduleButton:hover {
+	background: linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+	background-color: #bc3315;
+}
+.ScheduleButton:active {
+	position: relative;
+	top: 1px;
+}
